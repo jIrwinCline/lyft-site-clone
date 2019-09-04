@@ -14,6 +14,7 @@
 
 .flex-cols  {
   padding-left: 0px;
+  min-width: 50px;
 }
 
 .flex-add {

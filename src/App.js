@@ -1,23 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Home from './Home.js'
 import './App.css';
 import Navbar from './Navbar.js'
-import Footer from './Footer.js'
-import Apply from './Apply.js'
-import City from './img/city.gif'
+import DriverPage from './DriverPage.js'
+
 import {Route, Switch, BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-    // <BrowserRouter >
-    //   <Route path=""
-      <img src={City} className="picture">
-      </img>
-      <Apply />
-      <Footer />
-    // </BrowserRouter >
+
+    <BrowserRouter >
+      <Route exact path="/" component={Home} />
+      <Route exact path="/driver" component={DriverPage} />
+
+    </BrowserRouter >
+
     </div>
 
   );
